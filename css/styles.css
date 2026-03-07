@@ -1641,8 +1641,27 @@ body.gallery-page {
     height: 220px;
   }
 
+  /* Diapositivas: en móvil más grandes y flechas/indicadores más cerca */
   .book-viewer {
     flex-direction: column;
+    gap: 0.5rem;
+    margin: var(--espacio-md) 0 0.5rem;
+    min-height: auto;
+  }
+
+  .book-container {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .book-page img {
+    max-height: 65vh;
+    min-height: 280px;
+  }
+
+  .book-indicators {
+    margin-top: 0.5rem;
+    gap: 0.5rem;
   }
 
   .book-nav {

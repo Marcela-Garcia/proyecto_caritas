@@ -172,6 +172,7 @@ function initBookViewer() {
   }
 
   const dots = document.querySelectorAll('.book-dot');
+  const bookContainer = document.querySelector('.book-container');
 
   function showPage(index, direction = 0) {
     if (index < 0) index = totalPages - 1;
@@ -227,6 +228,31 @@ function initBookViewer() {
       event.preventDefault();
     }
   });
+
+  if (bookContainer) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    bookContainer.addEventListener('touchstart', event => {
+      const touch = event.changedTouches[0];
+      touchStartX = touch.screenX;
+      touchStartY = touch.screenY;
+    }, { passive: true });
+
+    bookContainer.addEventListener('touchend', event => {
+      const touch = event.changedTouches[0];
+      const deltaX = touch.screenX - touchStartX;
+      const deltaY = touch.screenY - touchStartY;
+
+      if (Math.abs(deltaX) < 45 || Math.abs(deltaX) < Math.abs(deltaY)) return;
+
+      if (deltaX < 0) {
+        showPage(currentIndex + 1, 1);
+      } else {
+        showPage(currentIndex - 1, -1);
+      }
+    }, { passive: true });
+  }
 }
 
 // ========== Galería carrusel (duplicar para loop infinito) ==========

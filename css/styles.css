@@ -973,6 +973,16 @@ body.menu-open {
   gap: var(--espacio-sm);
 }
 
+.book-swipe-hint {
+  display: none;
+  text-align: center;
+  color: #2d5a7b;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+}
+
 .book-counter {
   font-weight: 600;
   color: var(--azul-oscuro);
@@ -1863,18 +1873,35 @@ body.gallery-page {
 
   .book-viewer {
     flex-direction: column;
+    min-height: auto;
+    gap: 0.5rem;
+    margin: var(--espacio-md) 0;
   }
 
   .book-nav {
-    order: 2;
+    display: none;
   }
 
-  .book-prev {
-    order: 1;
+  .book-container {
+    width: 100%;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    user-select: none;
   }
 
-  .book-next {
-    order: 3;
+  .book-page img {
+    max-height: 58vh;
+  }
+
+  .book-swipe-hint {
+    display: block;
+    font-size: 0.85rem;
+    padding: 0 0.5rem;
+  }
+
+  .book-indicators {
+    gap: 0.65rem;
+    margin-top: 0.25rem;
   }
 
   .gallery-lightbox {

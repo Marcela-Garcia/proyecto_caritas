@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Las Caritas del Tuyú - 20 años acompañando a familias con niños en tratamiento oncológico y patologías crónicas o congénitas">
+  <meta property="og:title" content="Las Caritas del Tuyú | Asociación Civil">
+  <meta property="og:description" content="20 años de amor y solidaridad. Acompañamos a familias con niños en tratamiento oncológico. Doná o sumate como voluntario.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lascaritasdeltuyu.com">
+  <meta property="og:image" content="https://lascaritasdeltuyu.com/imagenes/logooriginal.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
   <title>Las Caritas del Tuyú | Asociación Civil</title>
   <link rel="icon" type="image/jpeg" href="imagenes/logooriginal.jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/modern.css">
 </head>
 <body>
   <!-- Navegación -->
@@ -87,30 +94,81 @@
 
   <!-- Hero -->
   <header id="inicio" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>20 años acompañando a familias con niños en tratamiento oncológico y patologías crónicas o congénitas</h1>
-      <div class="hero-logo">
-        <img src="imagenes/logooriginal.jpeg" alt="Las Caritas del Tuyú">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-shapes" aria-hidden="true">
+      <span class="hero-blob hero-blob--1"></span>
+      <span class="hero-blob hero-blob--2"></span>
+      <span class="hero-blob hero-blob--3"></span>
+    </div>
+    <div class="hero-inner container">
+      <div class="hero-text-col">
+        <span class="hero-badge">20 años de amor y solidaridad</span>
+        <h1>
+          <span class="hero-highlight">20 años</span> acompañando a familias con niños en tratamiento oncológico y patologías crónicas o congénitas
+        </h1>
+        <p class="hero-desc">Asociación Civil sin fines de lucro · Mar del Tuyú &amp; Mar de Ajo</p>
+        <div class="hero-actions">
+          <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="btn btn-primary btn-glow">Donar ahora</a>
+          <a href="#quienes-somos" class="btn btn-glass">Conocenos</a>
+          <a href="galeria.html" class="btn btn-glass">Ver galería</a>
+        </div>
+      </div>
+      <div class="hero-logo-col">
+        <img class="hero-logo-img" src="imagenes/logooriginal.jpeg" alt="Las Caritas del Tuyú">
       </div>
     </div>
+    <a href="#impacto" class="hero-scroll" aria-label="Desplazarse hacia abajo">
+      <span></span>
+    </a>
   </header>
+
+  <!-- Barra de impacto -->
+  <section id="impacto" class="stats-bar">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-value">
+          <span class="stat-number" data-target="20">0</span><span class="stat-suffix">+</span>
+        </div>
+        <span class="stat-label">Años de trayectoria</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">
+          <span class="stat-number" data-target="2">0</span>
+        </div>
+        <span class="stat-label">Sedes en la costa</span>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">
+          <span class="stat-number" data-target="4">0</span>
+        </div>
+        <span class="stat-label">Áreas de apoyo</span>
+      </div>
+      <div class="stat-item stat-item--cta">
+        <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="stat-cta">Sumate hoy →</a>
+        <span class="stat-label">Tu ayuda transforma vidas</span>
+      </div>
+    </div>
+  </section>
 
   <!-- Bloque con fondo22: desde Quiénes Somos hasta el footer -->
   <div class="fondo22-bloque">
   <!-- Quiénes Somos -->
   <section id="quienes-somos" class="section quienes-somos">
     <div class="container">
-      <h2 class="section-title">Quiénes Somos</h2>
-      <p class="quienes-intro-text">Somos una asociación civil sin fines de lucro que brinda contención, acompañamiento y esperanza a familias que atraviesan momentos difíciles. Tu ayuda nos permite seguir estando presentes.</p>
-      <div class="quienes-grid">
-        <div class="quienes-image">
-          <img src="imagenes/imagenniños.jpeg" alt="Las Caritas del Tuyú - Los niños protagonistas">
-        </div>
-        <div class="quienes-content">
-          <p>Desde hace 20 años, <strong>Las Caritas del Tuyú</strong> trabaja para acompañar a familias con niños que enfrentan tratamientos oncológicos, patologías congénitas o crónicas.</p>
-          <p>Nuestra misión es ofrecer apoyo emocional, social y material, creando un espacio de contención donde cada familia se sienta acompañada y nunca sola.</p>
-          <p>Creemos en la fuerza de la comunidad, en la solidaridad y en el amor como motor de transformación.</p>
+      <div class="quienes-panel">
+        <header class="quienes-header">
+          <h2 class="section-title">Quiénes Somos</h2>
+          <p class="quienes-intro-text">Somos una asociación civil sin fines de lucro que brinda contención, acompañamiento y esperanza a familias que atraviesan momentos difíciles. Tu ayuda nos permite seguir estando presentes.</p>
+        </header>
+        <div class="quienes-grid">
+          <div class="quienes-image">
+            <img src="imagenes/imagenniños.jpeg" alt="Las Caritas del Tuyú - Los niños protagonistas">
+          </div>
+          <div class="quienes-content">
+            <p>Desde hace 20 años, <strong>Las Caritas del Tuyú</strong> trabaja para acompañar a familias con niños que enfrentan tratamientos oncológicos, patologías congénitas o crónicas.</p>
+            <p>Nuestra misión es ofrecer apoyo emocional, social y material, creando un espacio de contención donde cada familia se sienta acompañada y nunca sola.</p>
+            <p>Creemos en la fuerza de la comunidad, en la solidaridad y en el amor como motor de transformación.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -123,24 +181,32 @@
       <p class="obra-cita">Cada sonrisa que logramos es un paso más hacia la esperanza.</p>
       <div class="obra-grid">
         <div class="obra-card">
-          <div class="obra-icon">❤️</div>
+          <div class="obra-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
           <h3>Acompañamiento</h3>
-          <p>Acompañar a niños y sus familias durante tratamientos médicos prolongados.</p>
+          <p>Acompañamos a niños y familias durante tratamientos médicos prolongados.</p>
         </div>
         <div class="obra-card">
-          <div class="obra-icon">🌈</div>
+          <div class="obra-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+          </div>
           <h3>Apoyo emocional</h3>
-          <p>Brindar apoyo emocional y actividades recreativas que alivien la carga del día a día.</p>
+          <p>Actividades recreativas y contención que alivian la carga del día a día.</p>
         </div>
         <div class="obra-card">
-          <div class="obra-icon">🤝</div>
+          <div class="obra-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8H4v-8"/><path d="M22 7H2l3 5h14l3-5z"/><path d="M12 22V7"/></svg>
+          </div>
           <h3>Ayuda material</h3>
-          <p>Ofrecer ayuda material y logística en momentos críticos.</p>
+          <p>Apoyo material y logístico en los momentos más críticos.</p>
         </div>
         <div class="obra-card">
-          <div class="obra-icon">💫</div>
+          <div class="obra-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Espacios de encuentro</h3>
-          <p>Generar espacios de encuentro y contención para que las familias compartan experiencias y se fortalezcan mutuamente.</p>
+          <p>Encuentros de contención para que las familias compartan y se fortalezcan.</p>
         </div>
       </div>
     </div>
@@ -153,24 +219,30 @@
       <p class="section-intro">Tu colaboración hace posible que sigamos acompañando. Podés ayudar de distintas maneras:</p>
       <div class="ayuda-grid">
         <div class="ayuda-card">
-          <span class="ayuda-numero">01</span>
+          <div class="ayuda-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
           <h3>Donaciones económicas</h3>
           <p>Cada aporte suma y se transforma en apoyo directo a las familias.</p>
         </div>
         <div class="ayuda-card">
-          <span class="ayuda-numero">02</span>
+          <div class="ayuda-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Voluntariado</h3>
           <p>Sumate a nuestras actividades y sé parte de esta obra.</p>
         </div>
         <div class="ayuda-card">
-          <span class="ayuda-numero">03</span>
+          <div class="ayuda-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          </div>
           <h3>Difusión</h3>
           <p>Compartí nuestra misión y ayudanos a llegar a más corazones.</p>
         </div>
       </div>
       <div class="ayuda-buttons">
-        <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="btn btn-primary">Donar ahora</a>
-        <a href="https://wa.me/542257524980" target="_blank" rel="noopener" class="btn btn-primary">Sumate como voluntario</a>
+        <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="btn btn-primary btn-glow">Donar ahora</a>
+        <a href="https://wa.me/542257524980" target="_blank" rel="noopener" class="btn btn-secondary">Sumate como voluntario</a>
       </div>
     </div>
   </section>
@@ -234,21 +306,35 @@
       <p class="section-intro">Conocé más sobre nuestra obra a través de imágenes y videos que muestran el día a día de nuestras actividades.</p>
       
       <div class="multimedia-content">
-        <div class="video-container">
-          <h3>Nuestro canal de YouTube</h3>
-          <div class="video-wrapper">
-            <a href="https://youtube.com/@lascaritasdeltuyu" target="_blank" rel="noopener" class="video-placeholder">
-              <img src="imagenes/canalyoutube.jpeg" alt="Canal de YouTube Las Caritas del Tuyú">
-            </a>
-            <!-- Para embeber un video: descomentá la línea de abajo y reemplazá VIDEO_ID -->
-            <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Las Caritas del Tuyú" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- YouTube primero, ancho completo -->
+        <div class="multimedia-panel multimedia-youtube">
+          <div class="multimedia-youtube-header">
+            <div class="multimedia-yt-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <div>
+              <h3>Nuestro canal de YouTube</h3>
+              <p class="multimedia-subtitle">Videos de nuestras actividades, eventos y el día a día de la asociación</p>
+            </div>
           </div>
-          <a href="https://youtube.com/@lascaritasdeltuyu?si=fka-Zsw_SQWxyvNo" target="_blank" rel="noopener" class="btn btn-outline">Ver canal completo</a>
+          <a href="https://youtube.com/@lascaritasdeltuyu" target="_blank" rel="noopener" class="multimedia-youtube-preview">
+            <img src="imagenes/canalyoutube.jpeg" alt="Canal de YouTube Las Caritas del Tuyú">
+          </a>
+          <div class="multimedia-youtube-actions">
+            <a href="https://youtube.com/@lascaritasdeltuyu?si=fka-Zsw_SQWxyvNo" target="_blank" rel="noopener" class="btn btn-youtube">Ver canal completo</a>
+          </div>
         </div>
-        
-        <div class="gallery-section">
-          <h3>Nuestros momentos</h3>
-          <div class="gallery-carousel">
+
+        <!-- Carrusel de imágenes abajo -->
+        <div class="multimedia-panel multimedia-carousel-panel">
+          <div class="multimedia-carousel-header">
+            <div>
+              <h3>Nuestros momentos</h3>
+              <p class="multimedia-subtitle">Un vistazo a la obra que hacemos junto a las familias</p>
+            </div>
+            <a href="galeria.html" class="multimedia-gallery-link">Ver galería completa →</a>
+          </div>
+          <div class="gallery-carousel multimedia-carousel">
             <div class="gallery-track">
               <div class="gallery-slide"><img src="imagenes/imagenlogros.jpeg" alt="Eventos y reconocimientos"></div>
               <div class="gallery-slide"><img src="imagenes/imagenniños.jpeg" alt="Los niños protagonistas"></div>
@@ -266,9 +352,9 @@
     <div class="container">
       <h2 class="section-title">Tu aporte transforma vidas</h2>
       <p class="section-intro">Cada donación nos permite seguir acompañando a más familias. ¡Gracias por ser parte!</p>
-      <div class="donar-content">
+      <div class="donar-content donar-panel">
         <p>Para realizar tu donación, contactanos por WhatsApp o email y te indicaremos las opciones disponibles.</p>
-        <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="btn btn-primary btn-large">Donar ahora</a>
+        <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="btn btn-primary btn-large btn-glow">Donar ahora</a>
       </div>
     </div>
   </section>
@@ -279,26 +365,35 @@
   <!-- Contacto -->
   <section id="contacto" class="section contacto">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-intro">Queremos escucharte. Si tenés dudas, querés colaborar o simplemente conocer más sobre nuestra obra, escribinos.</p>
-      
-      <div class="contacto-datos">
+      <div class="contacto-panel">
+        <header class="contacto-header">
+          <h2 class="section-title">Contacto</h2>
+          <p class="section-intro">Queremos escucharte. Si tenés dudas, querés colaborar o simplemente conocer más sobre nuestra obra, escribinos.</p>
+        </header>
+
+        <div class="contacto-datos">
           <div class="contacto-item">
-            <span class="contacto-icon">📍</span>
+            <span class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
             <div>
               <strong>Domicilio Legal</strong>
               <p>Calle 89 nº 325 – Mar del Tuyú</p>
             </div>
           </div>
           <div class="contacto-item">
-            <span class="contacto-icon">📍</span>
+            <span class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
             <div>
               <strong>Sede Central</strong>
               <p>Montevideo 1412 – Mar de Ajo</p>
             </div>
           </div>
           <div class="contacto-item contacto-telefonos">
-            <span class="contacto-icon">📞</span>
+            <span class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
             <div>
               <strong>Teléfonos</strong>
               <p><a href="tel:+542246485352">2246 485352</a> · <a href="tel:+542257524980">2257 524980</a></p>
@@ -309,7 +404,9 @@
             </div>
           </div>
           <div class="contacto-item">
-            <span class="contacto-icon">✉️</span>
+            <span class="contacto-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
             <div>
               <strong>Email</strong>
               <p><a href="mailto:marcelafabero@yahoo.com.ar">marcelafabero@yahoo.com.ar</a><br>
@@ -344,6 +441,7 @@
             </div>
           </div>
         </div>
+      </div>
     </div>
   </section>
 
@@ -358,6 +456,12 @@
       </div>
     </div>
   </footer>
+
+  <!-- WhatsApp flotante -->
+  <a href="https://wa.me/542246485352" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Donar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Donar</span>
+  </a>
 
   <script src="js/main.js"></script>
 </body>
